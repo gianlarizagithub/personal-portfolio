@@ -93,6 +93,12 @@
 
 // For screens smaller than 576px
 @include respond-down(sm) {
+  .hero-subheading {
+    span {
+      font-size: 0.7rem !important;
+      margin-bottom: 0 !important;
+    }
+  }
   .nav-8bit-hero {
     h3 {
       font-size: 16px;
