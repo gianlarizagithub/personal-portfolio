@@ -93,12 +93,27 @@
 
 // For screens smaller than 576px
 @include respond-down(sm) {
-  .hero-subheading {
-    span {
-      font-size: 0.7rem !important;
-      margin-bottom: 0 !important;
+  .info-buttons {
+    .main-button,
+    .second-button {
+      font-size: $small-screen-p-font-size;
+      padding: 10px;
     }
   }
+  .custom-border {
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 6px;
+  }
+  .hero-headings {
+    margin-top: 1rem;
+    .hero-subheading {
+      span {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
   .nav-8bit-hero {
     h3 {
       font-size: 16px;
@@ -106,7 +121,7 @@
   }
 
   .main-heading {
-    font-size: 15rem;
+    font-size: 11rem;
     line-height: 28rem;
   }
   .hero-headings {
@@ -114,8 +129,8 @@
 
     p {
       position: absolute;
-      bottom: -1rem;
-      font-size: 13px;
+      bottom: 1rem;
+      font-size: 11px;
     }
   }
 
@@ -134,5 +149,159 @@
   .trademark-name {
     padding-top: 1rem;
     font-size: 12px;
+  }
+
+  .info-content {
+    .info-body {
+      .info-title {
+        span {
+          font-size: $small-screen-title-font-size;
+        }
+        .information {
+          p {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+    }
+  }
+
+  .abilities-container {
+    .title span {
+      font-size: $small-screen-title-font-size;
+    }
+    .skill-item {
+      .skill-percentage {
+        font-size: $small-screen-p-font-size;
+      }
+      .language span {
+        font-size: $small-screen-p-font-size;
+      }
+    }
+
+    .skill-selected-detail {
+      .head {
+        .skill-logo-big img {
+          height: 239px !important;
+          width: 239px !important;
+        }
+        .head-skill-content {
+          gap: 18px;
+          .skill-title h4 {
+            font-size: $small-screen-title-font-size;
+          }
+          .skill-bar span {
+            font-size: $small-screen-p-font-size;
+          }
+          .detailed-label {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+      .skill-description p {
+        font-size: $small-screen-p-font-size;
+      }
+      .main-button {
+        width: 100%;
+        font-size: $small-screen-p-font-size;
+      }
+    }
+  }
+
+  .project-header {
+    .title {
+      font-size: $small-screen-title-font-size;
+    }
+  }
+
+  .project-container {
+    .project-content {
+      .project-title {
+        h5 {
+          font-size: $small-screen-title-font-size;
+        }
+        span {
+          font-size: $small-screen-p-font-size;
+        }
+      }
+      .main-button {
+        font-size: $small-screen-p-font-size;
+        padding: 10px;
+      }
+      .project-information p {
+        font-size: $small-screen-p-font-size;
+      }
+    }
+  }
+
+  .project-details-container {
+    .skills-required-container {
+      .title span {
+        font-size: $small-screen-title-font-size;
+      }
+      .item-skill {
+        height: 126px;
+        .item-image img {
+          width: 80px;
+          object-fit: contain;
+        }
+      }
+
+      .objectives-container {
+        .title span {
+          font-size: $small-screen-title-font-size;
+        }
+        .objectives-description {
+          height: 257px;
+          p {
+            font-size: $small-screen-p-font-size;
+          }
+        }
+      }
+    }
+
+    .selected-project-container {
+      .selected-project-image-big {
+        height: 324px;
+      }
+      .project-selected-title h2 {
+        font-size: 16px;
+      }
+      .selected-project-details span {
+        font-size: $small-screen-title-font-size;
+      }
+      .second-button {
+        width: 100%;
+        font-size: $small-screen-title-font-size;
+      }
+    }
+  }
+
+  .contact-container {
+    .me-image img {
+      width: 195px;
+      height: 195px;
+    }
+    p {
+      font-size: $small-screen-p-font-size;
+    }
+
+    form input {
+      font-size: $small-screen-p-font-size;
+    }
+
+    .main-button {
+      width: 100%;
+      font-size: $small-screen-p-font-size;
+    }
+
+    span,
+    span a {
+      font-size: $small-screen-p-font-size;
+    }
+  }
+  .nav-8bit {
+    padding: 1rem;
+    font-size: $small-screen-p-font-size;
   }
 }
